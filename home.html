@@ -8,45 +8,24 @@
         height: 1000vh;
         margin: 50px;
       }
-      div {
-        position: relative;
-        width: 150px;
-        height: 150px;
-        background-color: wheat;
-      }
       span {
-        background-color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-
-      /* span:nth-child(odd) {
-        background-color: teal;
-      } */
-      /* span:nth-child(even) {
-        background-color: teal;
-      } */
-
-      span:nth-child(4n + 1) {
-        background-color: teal;
+      p + span {
+        text-decoration: underline;
       }
-      /* 
-      #tomato = id = "tomato" 
-      .tomato = class = "tomato"
-      */
+      /* div > span {
+        text-decoration: underline;
+      } */
     </style>
   </head>
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <span>hello</span>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod</p>
+      <span>inside</span>
+    </div>
   </body>
 </html>
