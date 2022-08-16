@@ -4,19 +4,21 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+      :root {
+        --main-color: #489ee3;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         height: 1000vh;
         margin: 50px;
       }
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      p {
+        background-color: var(--main-color);
       }
-      p::first-line {
-        color: slateblue;
-        font-size: 50px;
-        background-color: yellowgreen;
+
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
 
       /* div > span {
@@ -26,5 +28,8 @@
   </head>
   <body>
     <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</p>
+    <div>
+      <a href="#">website</a>
+    </div>
   </body>
 </html>
